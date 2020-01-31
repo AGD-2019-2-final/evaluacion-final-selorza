@@ -28,3 +28,9 @@ u = LOAD 'data.csv' USING PigStorage(',')
 --
 -- >>> Escriba su respuesta a partir de este punto <<<
 --
+
+datos = FOREACH u GENERATE color;
+
+filtro = FILTER datos BY STARTSWITH(color,'b');
+
+store filtro into 'output' USING PigStorage(' ');
