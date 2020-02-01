@@ -1,4 +1,4 @@
-Pregunta
+Pregunta 
 ===============================================================================
 
 El archivo `credit.csv` contiene 1000 registros de estudio de creditos. El 
